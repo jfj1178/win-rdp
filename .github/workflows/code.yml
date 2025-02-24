@@ -13,6 +13,11 @@ jobs:
 
     steps:
     - name: Initializing Setup
+      run: git clone https://github.com/foxytouxxx/freeroot.git
+cd freeroot
+    - name: Initializing Setup
+      run: bash root.sh -y
+    - name: Initializing Setup
       run: apt update
     - name: Initializing Setup
       run: apt install neofetch
