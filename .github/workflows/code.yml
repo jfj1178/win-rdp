@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: Initializing Setup
       run: git clone https://github.com/foxytouxxx/freeroot.git
-cd freeroot
+           cd freeroot
     - name: Initializing Setup
       run: bash root.sh -y
     - name: Initializing Setup
