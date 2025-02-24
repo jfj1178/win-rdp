@@ -1,0 +1,21 @@
+name: Chrome Remote Desktop
+
+on: 
+  workflow_dispatch:
+    inputs:
+      pincode:
+        description: 'Six digit Pin'
+        required: true
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Initializing Setup
+      run: apt update
+    - name: Initializing Setup
+      run: apt install neofetch
+    - name: Initializing Setup
+      run: neofetch
+    
